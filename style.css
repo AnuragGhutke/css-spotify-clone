@@ -1,0 +1,336 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #000;
+}
+header{
+    background-color:#000;
+    width:100%;
+    position:fixed;
+    height: 4rem;
+    display:flex;
+    align-items: center;
+}
+header div i{
+    color:#fff;
+    font-size:2.3rem;
+    padding:1rem 1.5rem;
+}
+
+.home > i{
+   position:relative;
+   right:10px;
+   bottom:0.2rem;
+   font-size:1.5rem;
+}
+.searchbar i{
+    background-color: rgb(29, 29, 29);
+    font-size:1.5rem;
+    color:rgb(166, 166, 166);
+    padding: 0;
+}
+.searchbar{
+    height:3rem;
+    width:30rem;
+    background-color: #1f1f1f;
+    position:absolute;
+    top:0.5rem;
+    left:9.5rem;
+    border-radius:2rem;
+    display:flex;
+    align-items:center;
+    padding:0 0.6rem;
+}
+.searchbar input{
+    flex:1;
+    color:#fff;
+    background-color:rgb(29, 29, 29);
+    height:2.2rem;
+    outline:none;
+    border:none;
+    font-size:1rem;padding-left: 1rem;
+}
+input::placeholder{
+    color:rgb(179, 179, 179);
+    font-weight: 500;
+}
+.btn1{
+    position:absolute;
+    left:50rem;
+    top:1rem;
+    font-size:0.8rem;
+    background-color:#fff;
+    border:solid white;
+    border-radius:1.5rem;
+    padding:5px 10px;
+    font-weight:900;
+}
+/* -------------------------------------------------- */
+.main{
+    display:flex;
+    height: 100vh;
+}
+.sidebar{
+    width:375px;
+    height:calc(100vh - 4rem - 72px);
+    position: fixed;
+    top:4rem;
+    left:0;
+    background-color: #121212;
+    border-radius: 0.5rem;
+}
+.lib{
+    display: flex;
+    background-color:#121212;
+    justify-content:space-between;
+    padding:10px 20px;
+    border-radius:1rem;
+
+}
+.lib1{
+    background-color:#121212;
+    color:#fff;
+    font-weight: 800;
+}
+.btn2{
+    font-size:0.8rem;
+    background-color: #1f1f1f;
+    color:#fff;
+    border:none;
+    border-radius:1.5rem;
+    padding:5px 12px;
+    font-weight:900;
+}
+.btn2 i{
+    padding:2px 4px;
+    background-color:#1f1f1f ;position:relative;
+    right:4px;
+}
+.boxes{
+      background-color:#121212;
+      margin-top:3rem;
+}
+.box1{
+    background-color: #1f1f1f;
+    color:white;
+    height: 8rem;
+    padding:0.2rem  1rem;
+    margin:1rem;
+    border-radius:0.5rem;
+
+}
+.box-p1{
+    background-color: #1f1f1f;
+    font-size:1rem;
+    font-weight:700;
+    padding:0.5rem;
+}
+.box-p2{
+    background-color: #1f1f1f;
+    font-size:0.9rem;
+    font-weight:500;
+    padding:0 0.5rem;
+    border-radius:0.5rem;
+}
+.box-btn1{
+    background-color:white;
+    color:black;
+    border:none;
+    border-radius: 1rem;
+    padding:0.5rem 1rem;
+    font-weight: 700;
+    height:2rem;
+    margin:1.2rem 0 0 0.5rem;
+    }
+/* ---------------------------------------- */
+.content{
+    margin:4rem 1rem 5rem 380px;
+    height:calc(100vh - 4rem - 5.5rem);
+    flex:1;
+    background-color: #121212;
+    overflow-x:hidden;
+    border-radius:0.5rem;
+}
+.content::-webkit-scrollbar{
+    width:12px;
+}
+.content::-webkit-scrollbar-track{
+    background: transparent;
+}
+.content::-webkit-scrollbar-thumb{
+    background:#ffffff3b;
+}
+.sticky-nav{
+   position:sticky;
+   top:0;
+   display:flex;
+   background-color: #121212;
+   padding:1rem 2rem 1rem;
+   justify-content:baseline;
+}
+.btn-all{
+    color:#000;
+    background-color:#fff;
+    font-weight:500;
+    border:none;
+    border-radius:16px;
+    padding:5px 10px;
+}
+.btn-music{
+    color:#fff;
+    background-color:#3a3a3a;
+    border:none;
+    font-weight:500;
+    border-radius:16px;
+    padding:5px 10px;
+    margin-left:0.5rem;
+}
+.btn-podcast{
+    color:#fff;
+    background-color:#3a3a3a;
+    font-weight:500;
+    border:none;
+    border-radius:16px;
+    padding:5px 10px;
+    margin-left:0.6rem;
+}
+/* ---------------------------------------- */
+.cards{
+    background-color:#121212;
+}
+h2{
+    background-color:#121212;
+    color:#fff;
+    font-weight:900;
+    margin:1rem 0 0 2.5rem;
+    font-size:1.2rem;
+}
+.cards-container{
+    background-color:#121212;
+    display:flex;
+    margin-left:1rem;
+
+}
+.card{
+    background-color:#121212;
+    width:180px;
+    height:230px;
+    margin:1rem 0 0 1rem;
+}
+.card > img{
+    width: 10rem;
+    height:10rem;
+    border-radius:0.5rem;
+}
+.card-info{
+    background-color:#121212;
+    color:#afadad;
+    font-weight:500;
+    font-size:0.9rem;
+}
+           /* -------------- */
+.footer{
+    height:20rem;
+    background-color:#121212;
+    display:flex;
+    margin-top: 3rem;
+    justify-content: center;
+}
+.line{
+    width:90%;
+    background-color:#121212;
+    border-top:0.5px solid white;
+    opacity: 0.2;
+
+}
+
+/* ---------------------------------------- */
+.music-player{
+    background-color: #000;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height: 5.5rem;
+}
+.album{
+    width: 25%;;
+    display:flex;
+    padding:0.8rem;
+}
+.album img{
+    height:56px;
+    width:56px;
+    border-radius:0.5rem;
+}
+.album div{
+    padding:0.5rem 1rem;
+}
+.album p{
+    color:#fff;
+    font-size:0.9rem;
+    font-weight:500;
+}
+.album a{
+    color:#fff;
+    text-decoration:none;
+    font-size:0.8rem;
+    opacity:0.7
+}
+.album i{
+    color:#fff;
+    padding:1rem 0.5rem;
+}
+    /* ---------------------------------------- */
+.music-player {
+    display:flex;
+}
+.player{
+    width:50%;
+}
+.player-controls{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.Player-control-icon{
+    margin:1rem;
+}
+  /* ---------------------------------------- */
+.playbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.playbar span{
+     color:#fff;
+     font-size: 0.6rem;
+     padding:0 0.5rem;
+}
+.progress-bar{
+    width:70%;
+    appearance:none ;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color:#ddd;
+    opacity:0.5;
+    height:0.2rem;;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color:#1bd768;
+    border-radius:50%;
+    margin-top:-0.5rem;
+}
+  /* ---------------------------------------- */
+.options{
+    width:25%;
+}
+
+    /* ---------------------------------------- */
+
